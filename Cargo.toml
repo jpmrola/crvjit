@@ -1,0 +1,13 @@
+[package]
+name = "crvjit"
+version = "0.1.0"
+edition = "2021"
+include = ["src/**/*"]
+
+[dependencies]
+memmap2 = "0.9.4"
+cranelift = { version = "0.114.0", features = ["jit", "module", "native"] }
+memoffset = "0.9.1"
+rustc-hash = "2.1.0"
+log = { version = "0.4.22", features = ["release_max_level_warn"] }
+env_logger = "0.11.5"
